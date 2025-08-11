@@ -1,0 +1,153 @@
+/* ---------- base ---------- */
+body { font-family: Arial, Helvetica, sans-serif; color: #222; margin:0; }
+a { color: #1d3b5e; }
+
+/* FDIC top bar */
+.fdic-bar { background:#000; color:#fff; padding:6px 0; text-align:center; font-size:13px; }
+
+/* top header */
+.top-header { background:#fff; padding:14px 0; border-bottom:1px solid #eee; }
+.brand-logo { height:44px; }
+
+/* header links */
+.header-links .header-link { margin-right:20px; color:#1d3b5e; text-decoration:none; font-weight:600; }
+.login-btn { background:#2f536f; color:#fff; padding:8px 12px; border-radius:6px; margin-left:10px; text-decoration:none; }
+
+/* secondary nav (blue) */
+.secondary-nav { background:#1f3a63; color:#fff; }
+.secondary-nav .container { padding:0 15px; }
+.nav-main { list-style:none; margin:0; padding:10px 0; display:flex; gap:10px; align-items:center; }
+.nav-main li { display:inline-block; }
+.nav-main a { color:#fff; padding:12px 16px; display:inline-block; font-weight:600; }
+
+/* mega wrapper & dropdown */
+.mega-wrap { position:relative; z-index:1000; }
+.mega-dropdown { display:none; background:#fff; border-radius:8px; margin-top:10px; padding:18px 24px; box-shadow:0 6px 18px rgba(0,0,0,0.12); }
+.mega-inner { padding:0; }
+
+/* promo left column inside megas */
+.promo-col { padding-right:20px; }
+.promo-box { background: linear-gradient(#1e4767, #12314a); color:#fff; border-radius:8px; padding:22px; height:100%; }
+.promo-box h4 { font-size:18px; margin-top:0; }
+.promo-box p { font-size:14px; margin:12px 0 18px; line-height:1.4; }
+.promo-btn { display:inline-block; background:#fff; color:#12314a; padding:12px 18px; border-radius:8px; text-decoration:none; font-weight:700; }
+
+/* header inside mega */
+.mega-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+.mega-header h3 { margin:0; color:#1d3b5e; font-size:24px; font-weight:700; }
+.help-support { color:#45607a; text-decoration:none; font-weight:600; }
+
+/* columns */
+.mega-cols { margin-top:6px; }
+.mega-cols h4 { font-size:16px; color:#1d3b5e; margin-top:0; margin-bottom:8px; }
+.mega-cols ul { list-style:none; padding-left:0; margin:0 0 18px 0; }
+.mega-cols ul li { margin:8px 0; }
+.mega-cols ul li a { color:#2b3b45; text-decoration:none; font-size:15px; }
+
+/* footer links row inside mega */
+.mega-foot { margin-top:10px; padding-top:10px; border-top:1px solid #eee; }
+.mega-foot a { color:#1d3b5e; font-weight:700; }
+
+/* hero section */
+.hero-section { padding:50px 15px; background:#f6f8fa; }
+.hero-left .eyebrow { color:#0e7d80; font-weight:700; margin-bottom:8px; }
+.hero-left h1 { color:#15385b; font-size:40px; line-height:1.05; margin:0 0 12px; }
+.hero-left .lead { font-size:16px; color:#4b5863; }
+.btn-cta { background:#224b74; color:#fff; border-radius:8px; padding:12px 22px; text-decoration:none; display:inline-block; border:none; }
+
+/* hero image */
+.hero-main { border-radius:12px; max-width:100%; display:block; }
+
+/* awards */
+.awards-section { background:#2f3a45; color:#fff; padding:18px 15px; }
+.awards-section .stars { font-size:18px; margin:0 0 6px; }
+
+/* services grid */
+.services-grid { padding:26px 15px; }
+.services-grid a { color:#1d3b5e; font-weight:700; }
+
+/* responsive */
+@media (max-width: 991px) {
+  .mega-cols .col-sm-3 { width:50%; float:left; margin-bottom:14px; }
+  .promo-col { display:block; width:100%; margin-bottom:14px; }
+  .mega-dropdown { padding:14px; }
+  .hero-left h1 { font-size:28px; }
+}
+
+@media (max-width: 575px) {
+  .nav-main { flex-wrap:wrap; }
+  .hero-left, .hero-right { text-align:center; }
+  .hero-left { margin-bottom:20px; }
+  .hero-left .eyebrow, .hero-left h1 { text-align:center; }
+}
+/* ---------- Login Dropdown Styles ---------- */
+.login-dropdown-menu {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px 20px;
+  min-width: 280px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.login-dropdown-menu li {
+  list-style: none;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.login-dropdown-menu li:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown-heading {
+  font-weight: 700;    /* Bold */
+  color: #000;         /* Black */
+  font-size: 16px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.login-submenu {
+  padding-left: 12px;
+  margin: 0;
+}
+
+.login-submenu li {
+  margin: 6px 0;
+}
+
+.login-submenu li a.dropdown-link {
+  color: #1d3b5e;       /* Blue consistent with your links */
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.login-submenu li a.dropdown-link:hover,
+.login-submenu li a.dropdown-link:focus {
+  text-decoration: underline;
+  color: #12314a; /* Slightly darker blue on hover */
+}
+
+/* Dividers */
+.login-dropdown-menu .divider {
+  border-top: 1px solid #eee;
+  margin: 12px 0;
+  padding: 0;
+}
+
+/* Adjust dropdown toggle */
+.header-links .dropdown-toggle {
+  color: #1d3b5e;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header-links .dropdown-toggle:hover,
+.header-links .dropdown-toggle:focus {
+  text-decoration: underline;
+  color: #12314a;
+}

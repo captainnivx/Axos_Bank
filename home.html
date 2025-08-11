@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Axos Bank Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 3 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/home.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <!-- FDIC top black bar -->
+  <div class="fdic-bar text-center">FDIC-Insured - Backed by the full faith and credit of the U.S. Government</div>
+
+  <!-- Top white header with logo and small links -->
+  <header class="top-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="home.html" class="brand-link">
+            <img src="images/axosbank_logo.png" alt="Axos Bank" class="brand-logo">
+          </a>
+        </div>
+        <div class="col-xs-6 text-right header-links">
+          <a href="#" class="header-link">Support</a>
+
+          <div class="dropdown" style="display:inline-block;">
+            <a href="#" class="header-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Log in <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu login-dropdown-menu" style="min-width: 280px; padding: 15px;">
+              <li>
+                <strong class="dropdown-heading">Personal</strong>
+                <ul class="login-submenu">
+                  <li><a href="#" class="dropdown-link">Account Login</a></li>
+                  <li><a href="#" class="dropdown-link">Make a Payment</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <strong class="dropdown-heading">Business</strong>
+                <ul class="login-submenu">
+                  <li><a href="#" class="dropdown-link">Business payment login</a></li>
+                  <li><a href="#" class="dropdown-link">MWA Business banking</a></li>
+                  <li><a href="#" class="dropdown-link">Commercial portal</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <strong class="dropdown-heading">Partners</strong>
+                <ul class="login-submenu">
+                  <li><a href="#" class="dropdown-link">Wholesale and Correspondent</a></li>
+                  <li><a href="#" class="dropdown-link">Advisor Login</a></li>
+                  <li><a href="#" class="dropdown-link">Customer Support</a></li>
+                  <li><a href="#" class="dropdown-link">Return to Application</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Secondary nav (blue) -->
+  <nav class="secondary-nav">
+    <div class="container">
+      <ul class="nav navbar-nav nav-main">
+        <li class="has-mega"><a href="#" data-target="#mega-bank">Bank <span class="caret"></span></a></li>
+        <li class="has-mega"><a href="#" data-target="#mega-borrow">Borrow <span class="caret"></span></a></li>
+        <li class="has-mega"><a href="#" data-target="#mega-invest">Invest <span class="caret"></span></a></li>
+        <li class="has-mega"><a href="#" data-target="#mega-plan">Plan <span class="caret"></span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MEGA DROPDOWNS CONTAINERS (hidden by default, shown on click/hover) -->
+  <div class="mega-wrap">
+
+    <!-- BANK MEGA -->
+    <div id="mega-bank" class="mega-dropdown container">
+      <div class="mega-inner row">
+        <!-- Left column removed as requested (no promo) -->
+        <div class="col-md-12">
+          <div class="mega-header">
+            <h3>Take your money further, faster</h3>
+            <a class="help-support" href="#">? Help & Support</a>
+          </div>
+
+          <div class="mega-cols row">
+            <div class="col-sm-3">
+              <h4>Checking</h4>
+              <ul>
+                <li><a href="#">Axos ONE Checking</a></li>
+                <li><a href="#">Rewards Checking</a></li>
+                <li><a href="#">Essential Checking</a></li>
+                <li><a href="#">First Checking</a></li>
+                <li><a href="#">CashBack Checking</a></li>
+                <li><a href="#">Golden Checking</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-3">
+              <h4>Savings</h4>
+              <ul>
+                <li><a href="#">Axos ONE Savings</a></li>
+                <li><a href="#">Summit Savings</a></li>
+                <li><a href="#">First Savings</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-3">
+              <h4>Certificates of Deposit</h4>
+              <ul>
+                <li><a href="#">CD Options</a></li>
+                <li><a href="#">CD Rates</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-3">
+              <h4>Premier</h4>
+              <ul>
+                <li><a href="#">Private Client</a></li>
+                <li><a href="#">InsureGuard+</a></li>
+                <li><a href="#">World Checking & Savings</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mega-foot row">
+            <div class="col-sm-4"><a href="#">ATM Locator</a></div>
+            <div class="col-sm-4"><a href="#">Refer-a-Friend</a></div>
+            <div class="col-sm-4"><a href="#">Insights</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BORROW MEGA -->
+    <div id="mega-borrow" class="mega-dropdown container">
+      <div class="mega-inner row">
+        <!-- left promo column (kept as small promo column like screenshot) -->
+        <div class="col-sm-3 promo-col">
+          <div class="promo-box">
+            <h4>$0 Lender Fee¹ on Home Loans</h4>
+            <p>Our best offer ever on home loans. Don't miss this limited time offer!</p>
+            <a class="promo-btn" href="#">Get a Quote</a>
+          </div>
+        </div>
+
+        <!-- main columns -->
+        <div class="col-sm-9">
+          <div class="mega-header">
+            <h3>Great rates on home loans</h3>
+            <a class="help-support" href="#">? Help & Support</a>
+          </div>
+
+          <div class="mega-cols row">
+            <div class="col-sm-3">
+              <h4>Mortgages</h4>
+              <ul>
+                <li><a href="#">Buying a Home</a></li>
+                <li><a href="#">Mortgage Refinance</a></li>
+                <li><a href="#">Get Pre-qualified</a></li>
+                <li><a href="#">Get a Rate Quote</a></li>
+                <li><a href="#">Apply Now</a></li>
+                <li><a href="#">Mortgage Services</a></li>
+                <li><a href="#">Make a Payment</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-3">
+              <h4>Personal Loans</h4>
+              <ul>
+                <li><a href="#">Learn More</a></li>
+                <li><a href="#">Apply Now</a></li>
+                <li><a href="#">Make a Payment</a></li>
+                <li><a href="#">Debt Consolidation Loans</a></li>
+                <li><a href="#">Home Improvement Loans</a></li>
+                <li><a href="#">Major Purchases Loans</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-3">
+              <h4>Auto Loans</h4>
+              <ul>
+                <li><a href="#">Auto Purchase Loans</a></li>
+                <li><a href="#">Auto Refinance Loans</a></li>
+                <li><a href="#">Auto Payment Calculator</a></li>
+                <li><a href="#">Manage My Loan</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-3">
+              <h4>Marine Loans</h4>
+              <ul>
+                <li><a href="#">Find The Right Loan</a></li>
+                <li><a href="#">Apply Now</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- INVEST MEGA -->
+    <div id="mega-invest" class="mega-dropdown container">
+      <div class="mega-inner row">
+        <div class="col-sm-3 promo-col">
+          <div class="promo-box">
+            <h4>Introducing Axos FundFinder+</h4>
+            <p>Quickly discover, research, and compare mutual funds and ETFs — just like the pros.</p>
+            <a class="promo-btn" href="#">Learn More</a>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="mega-header">
+            <h3>Quickly discover and compare mutual funds and ETFs</h3>
+            <a class="help-support" href="#">? Help & Support</a>
+          </div>
+
+          <div class="mega-cols row">
+            <div class="col-sm-3">
+              <h4>Managed Portfolios</h4>
+              <ul>
+                <li><a href="#">Managed Portfolios</a></li>
+                <li><a href="#">Investing Details</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-3">
+              <h4>Self Directed Trading</h4>
+              <ul>
+                <li><a href="#">Axos Elite Investing</a></li>
+                <li><a href="#">Stocks & ETFs</a></li>
+                <li><a href="#">Margin Trading</a></li>
+                <li><a href="#">Options Trading</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-3">
+              <h4>Retirement</h4>
+              <ul>
+                <li><a href="#">Retirement Accounts</a></li>
+                <li><a href="#">IRA Options</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-3">
+              <h4>Insights</h4>
+              <ul>
+                <li><a href="#">Investment Insights</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PLAN MEGA -->
+    <div id="mega-plan" class="mega-dropdown container">
+      <div class="mega-inner row">
+        <div class="col-sm-3 promo-col">
+          <div class="promo-box">
+            <h4>All your finances. In one place.</h4>
+            <p>Get the Axos All-In-One Mobile App and gain the insights you need to plan your next move.</p>
+            <a class="promo-btn" href="#">Get the App</a>
+          </div>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="mega-header">
+            <h3>Plan your next move</h3>
+            <a class="help-support" href="#">? Help & Support</a>
+          </div>
+
+          <div class="mega-cols row">
+            <div class="col-sm-4">
+              <h4>Axos Mobile App</h4>
+              <ul>
+                <li><a href="#">Download the App</a></li>
+                <li><a href="#">Mobile App Features</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-4">
+              <h4>Financial Tools</h4>
+              <ul>
+                <li><a href="#">Calculators</a></li>
+                <li><a href="#">Credit Score Monitoring</a></li>
+                <li><a href="#">Personal Finance Manager</a></li>
+                <li><a href="#">Additional Tools</a></li>
+                <li><a href="#">Fund Your Account</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-4">
+              <h4>Education & Insights</h4>
+              <ul>
+                <li><a href="#">Banking Insights</a></li>
+                <li><a href="#">Investing Insights</a></li>
+                <li><a href="#">Investing Podcast</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div> <!-- /mega-wrap -->
+
+  <!-- HERO -->
+  <section class="container hero-section">
+    <div class="row">
+      <div class="col-md-6 hero-left">
+        <p class="eyebrow">Axos ONE®</p>
+        <h1>Your money deserves up to<br>4.46% APY.*</h1>
+        <p class="lead">Reach your financial goals faster. Axos ONE helps you get there with high-APY savings that's up to <strong>11x the national average</strong>.</p>
+        <a class="btn btn-primary btn-cta" href="#">Get Axos ONE</a>
+      </div>
+      <div class="col-md-6 hero-right">
+        <img src="images/heroimage.png" class="img-responsive hero-main" alt="hero">
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards -->
+  <section class="awards-section">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <p class="stars">★★★★★</p>
+          <strong>Best Checking Account Overall</strong><br><small>The Ascent</small>
+        </div>
+        <div class="col-sm-4">
+          <p class="stars">★★★★★</p>
+          <strong>America's Best Online Bank</strong><br><small>MyBankTracker</small>
+        </div>
+        <div class="col-sm-4">
+          <p class="stars">★★★★★</p>
+          <strong>Best Online Bank for Savings & Checking</strong><br><small>Millennial Money</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services grid (short) -->
+  <section class="container services-grid">
+    <div class="row text-center">
+      <div class="col-sm-3"><a href="#">Checking</a></div>
+      <div class="col-sm-3"><a href="#">Savings</a></div>
+      <div class="col-sm-3"><a href="#">Investing</a></div>
+      <div class="col-sm-3"><a href="#">Mortgage</a></div>
+    </div>
+  </section>
+
+  <script>
+    // Open/close mega dropdowns: show on hover and on click (for touch)
+    $(function(){
+      // on hover (desktop)
+      $('.nav-main li.has-mega').hover(function(){
+        var target = $(this).find('a').data('target');
+        // hide other dropdowns
+        $('.mega-dropdown').hide();
+        $(target).slideDown(150);
+      }, function(){
+        // do nothing on mouseleave to keep visible until user moves (we close on body click)
+      });
+
+      // click on items to toggle (for mobile/touch)
+      $('.nav-main li.has-mega > a').on('click', function(e){
+        e.preventDefault();
+        var target = $(this).data('target');
+        // toggle target
+        $('.mega-dropdown').not(target).hide();
+        $(target).slideToggle(150);
+      });
+
+      // clicking outside closes dropdown
+      $(document).on('click touchstart', function(e){
+        if( $(e.target).closest('.secondary-nav, .mega-dropdown').length === 0 ){
+          $('.mega-dropdown').slideUp(150);
+        }
+      });
+
+      // stop clicks inside mega from closing
+      $('.mega-dropdown').on('click', function(e){ e.stopPropagation(); });
+    });
+  </script>
+</body>
+</html>
